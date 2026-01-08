@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/new-images/Logo.png">
+    <title> Kallos – All Aesthetic Services</title>
+    
+    <!-- CSS Links from about.html -->
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/sass/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/new-style.css">
+
+    <style>
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: #fff;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "Onest", sans-serif;
+            color: #000;
+        }
+
+
+
+        /* SERVICES */
+        .service-section {
+            background-color: #75ced424;
+            padding: 40px 0;
+        }
+
+        .wpo-section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .wpo-section-title span {
+            color: #00a8a8;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .wpo-section-title h2 {
+            font-size: 2.4rem;
+            margin-top: 10px;
+        }
+
+        .services-grid .service-card-col {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .service-section .service-card {
+            width: 100%;
+            height: 100%;
+            min-height: 320px;
+            background: #fff;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-section .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+
+        .service-section .service-text {
+            position: static !important;
+            bottom: auto !important;
+            left: auto !important;
+            background: transparent !important;
+            padding: 30px 20px;
+            border-radius: 0;
+            box-shadow: none !important;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+            text-align: center;
+            width: 100%;
+        }
+
+        .service-section .service-text h5 {
+            font-size: 1.4rem;
+            min-height: auto;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .service-section .service-text p {
+            color: #666;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .service-section .service-text ul {
+            padding-left: 0;
+            margin-bottom: 20px;
+            list-style: none;
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto 20px;
+        }
+
+        .service-section .service-text ul li {
+            font-size: 0.95rem;
+            color: #555;
+            padding: 5px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .service-section .service-text ul li:before {
+            content: "•";
+            color: #75CED4;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .service-section .service-btn {
+            margin-top: auto;
+            align-self: center;
+            min-width: 160px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111;
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+
+        footer h5 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        footer p, footer li {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #75CED4;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            margin-top: 30px;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        
+        /* ================= WHY CHOOSE US ================= */
+        .why-choose-us-section {
+            background-color: #fff;
+            padding: 100px 0;
+        }
+        
+        .feature-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: #75ced424;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 28px;
+            color: #75CED4;
+        }
+        
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        
+        .feature-card p {
+            color: #666;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end preloader -->
+
+        <!-- Start header -->
+        <header id="header" class="new-header">
+            <div class="wpo-site-header wpo-header-style-2">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn new-toggle">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img
+                                            src="assets/images/new-images/Logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children ">
+                                            <a class="new-li" href="./index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a class="new-li" href="./about.html">About</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a class="new-li" href="./services.html">Services</a>
+                                            <ul class="sub-menu">
+                                                  <li><a href="./SkinLightening.html">Skin Lightening</a></li>
+                                                    <li><a href="./HairGrowthPRP.html">Hair Growth PRP</a></li>
+                                                      <li><a href="./LaserHairRemoval.html">Laser Hair Removal</a></li>
+                                                         <li><a href="./AcneRemoval.html">Acne Removal</a></li>
+                                                <li><a href="./Anti-Aging.html">Anti-Ageing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="new-li" href="./contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-2">
+                                <div class="header-right">
+                                    <div class="close-form">
+                                        <a class="theme-btn new-btn" href="#">Book Your Consultation</a>
+                                    </div>
+                                    <div class="header-search-form-wrapper">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- start wpo-page-title -->
+        <section class="wpo-page-title" style="background-image: url(./assets/images/new-images/services-hero.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="wpo-breadcumb-wrap">
+                            <h2>Services</h2>
+                            <ol class="wpo-breadcumb-wrap">
+                                <li><a style="color: white !important;" href="index.html">Home</a></li>
+                                <li style="color: #54d3dd;">Services</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+        <!-- end page-title -->
+
+        <!-- SERVICES -->
+        <section class="service-section">
+            <div class="container">
+
+                <div class="wpo-section-title">
+                    <span>Our Services</span>
+                    <h2>Discover Your Perfect Care</h2>
+                </div>
+
+                <div class="row g-4 services-grid">
+
+                    <!-- Acne Removal -->
+                    <div class="col-lg-4 col-md-6 service-card-col">
+                        <div class="service-card">
+                            <div class="service-text">
+                                <h5>Acne Removal</h5>
+                                <p>Advanced dermatological solutions to clear acne, reduce scars, and prevent breakouts.</p>
+                                <ul class="list-unstyled">
+                                    <li>• Active acne & scar reduction</li>
+                                    <li>• Oil control & pore tightening</li>
+                                    <li>• Safe for all skin types</li>
+                                </ul>
+                                <a href="./AcneRemoval.html" class="theme-btn service-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Anti Aging -->
+                    <div class="col-lg-4 col-md-6 service-card-col">
+                        <div class="service-card">
+                            <div class="service-text">
+                                <h5>Anti-Aging</h5>
+                                <p>Non-surgical treatments that restore youthful glow and improve skin texture.</p>
+                                <ul class="list-unstyled">
+                                    <li>• Fine line & wrinkle reduction</li>
+                                    <li>• Boosts collagen naturally</li>
+                                    <li>• Improves skin firmness</li>
+                                </ul>
+                                <a href="./Anti-Aging.html" class="theme-btn service-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hair Growth PRP -->
+                    <div class="col-lg-4 col-md-6 service-card-col">
+                        <div class="service-card">
+                            <div class="service-text">
+                                <h5>Hair Growth PRP</h5>
+                                <p>PRP therapy to stimulate hair regrowth using your body’s natural healing process.</p>
+                                <ul class="list-unstyled">
+                                    <li>• Reduces hair fall</li>
+                                    <li>• Strengthens follicles</li>
+                                    <li>• Chemical-free treatment</li>
+                                </ul>
+                                <a href="./HairGrowthPRP.html" class="theme-btn service-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Laser Hair Removal -->
+                    <div class="col-lg-4 col-md-6 service-card-col">
+                        <div class="service-card">
+                            <div class="service-text">
+                                <h5>Laser Hair Removal</h5>
+                                <p>Permanent hair reduction using advanced laser technology for smooth skin.</p>
+                                <ul class="list-unstyled">
+                                    <li>• All body areas</li>
+                                    <li>• Painless & quick</li>
+                                    <li>• Long-lasting results</li>
+                                </ul>
+                                <a href="./LaserHairRemoval.html" class="theme-btn service-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skin Lightening -->
+                    <div class="col-lg-4 col-md-6 service-card-col">
+                        <div class="service-card">
+                            <div class="service-text">
+                                <h5>Skin Lightening</h5>
+                                <p>Correct pigmentation and enhance skin brightness for an even complexion.</p>
+                                <ul class="list-unstyled">
+                                    <li>• Reduces pigmentation</li>
+                                    <li>• Brightens dull skin</li>
+                                    <li>• Improves natural glow</li>
+                                </ul>
+                                <a href="./SkinLightening.html" class="theme-btn service-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WHY CHOOSE US ================= -->
+        <section class="why-choose-us-section">
+            <div class="container">
+                <div class="wpo-section-title">
+                    <span>Why Choose Us</span>
+                    <h2>Experience Excellence in Aesthetic Care</h2>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <h4>Expert Professionals</h4>
+                            <p>Our team consists of certified dermatologists and aesthetic specialists with years of experience in advanced skin treatments.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa fa-certificate"></i>
+                            </div>
+                            <h4>Advanced Technology</h4>
+                            <p>We utilize the latest, FDA-approved equipment and cutting-edge techniques for optimal results and safety.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <h4>Personalized Care</h4>
+                            <p>Each treatment plan is customized to meet your unique skin type, concerns, and aesthetic goals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa fa-shield"></i>
+                            </div>
+                            <h4>Safety First</h4>
+                            <p>Strict hygiene protocols and safety measures are followed to ensure your comfort and well-being.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h4>Proven Results</h4>
+                            <p>Our track record of satisfied clients speaks to the effectiveness and quality of our treatments.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa fa-comments"></i>
+                            </div>
+                            <h4>Exceptional Service</h4>
+                            <p>From consultation to aftercare, we provide unparalleled customer service and support throughout your journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer-s2">
+            <div class="wpo-upper-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="assets/images/new-images/light-logo.png" alt="blog">
+                                </div>
+                                <p>Kallos Aesthetics: Where medical expertise meets artistic vision. We offer advanced skin,
+                                    hair, and body treatments tailored to your unique beauty needs.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3 class="footer-title">Company</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Newsroom </a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Department</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget wpo-contact-widget">
+                                <div class="widget-title">
+                                    <h3 class="footer-title">Contact</h3>
+                                </div>
+                                <div class="contact-ft">
+                                    <ul>
+                                        <li><i class="fi flaticon-placeholder"></i>Maya's Court, 1/1834, 18th Main Rd,
+                                            Anna Nagar West, Anna Nagar, Chennai, Tamil Nadu 600040
+                                        </li>
+                                        <li><i class="fi flaticon-phone-call"></i>+91 95858 50306</li>
+                                        <li><i class="fi flaticon-email"></i>kallosaesthetics.in@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget newsletter-widget">
+                                <div class="widget-title">
+                                    <h3 class="footer-title">Newsletter</h3>
+                                </div>
+                                <p class="footer-title">You will be notified when somthing new will be appear.</p>
+                                <form>
+                                    <div class="input-1">
+                                        <input type="email" class="form-control" placeholder="Email Address *" required>
+                                    </div>
+                                    <div class="submit clearfix">
+                                        <button type="submit"><i class="ti-email"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end container -->
+            </div>
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <p class="copyright">Copyright &copy;<span style="color: #54d3dd !important;">2025</span>
+                                <span class="copyright-icon" style="color: #54d3dd !important;">|</span> All Rights
+                                Reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="./chatbot.css">
+    <script src="./chatbot.js"></script>
+</body>
+</html>
