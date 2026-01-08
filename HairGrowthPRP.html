@@ -658,14 +658,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <!-- Success/Error Messages -->
-                                                        <div class="clearfix error-handling-messages mt-2">
-                                                            <div id="success" style="color: green;">Thank you</div>
-                                                            <div id="error" style="color: red;">Error occurred while
-                                                                sending
-                                                                email.
-                                                                Please try again later.</div>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </form>
 
@@ -906,7 +899,7 @@
                                 if (data.message) {
                                     errorDiv.innerHTML = data.message;
                                 } else {
-                                    errorDiv.innerHTML = 'Error occurred while processing your request. Please try again later.';
+                                    errorDiv.innerHTML = '';
                                 }
                                 errorDiv.style.display = 'block';
                                 errorDiv.scrollIntoView({behavior: 'smooth'});
@@ -914,7 +907,7 @@
                                 // Hide error message after 5 seconds
                                 setTimeout(() => {
                                     errorDiv.style.display = 'none';
-                                    errorDiv.innerHTML = 'Error occurred while\n                                                                sending\n                                                                email.\n                                                                Please try again later.'; // Reset to original message
+                                    errorDiv.innerHTML = ''; // Reset to original message
                                 }, 5000);
                             }
                         }

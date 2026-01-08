@@ -226,26 +226,45 @@
                                     Your skin reflects your lifestyle, environment, and overall health. Daily exposure to sun, pollution, dehydration, and stress can gradually lead to dullness, uneven tone, pigmentation, and premature skin damage. At Kallos Aesthetics, Chennai, we offer science-backed skin lightening treatments designed to repair damage, improve skin tone, and restore your natural radiance safely and effectively.
                                 </p>
                                  
-                                <h4>What Causes This Problem</h4>
-                                <ul style="padding-left: 20px;">
-                                    <li><strong>Sun Damage & UV Exposure</strong><br>
-                                    Prolonged exposure to high UV rays—especially common for outdoor workers, joggers, and seaside residents—can trigger excess melanin production, tanning, and pigmentation.</li><br>
+                                <div class="causes-section mb-5">
+                                    <h4 class="section-heading mb-4">What Causes This Problem</h4>
+                                    <div class="row g-4">
+                                   <div class="col-md-6 col-lg-4">
+                                       <div class="cause-card h-100">
+                                           <h5 class="cause-title">Sun Damage &amp; UV Exposure</h5>
+                                           <p class="cause-description">Prolonged exposure to high UV rays—especially common for outdoor workers, joggers, and seaside residents—can trigger excess melanin production, tanning, and pigmentation.</p>
+                                       </div>
+                                   </div>
                                                                     
-                                    <li><strong>Dry & Dehydrated Skin</strong><br>
-                                    Lack of moisture weakens the skin barrier, making skin appear rough, tired, and lifeless.</li><br>
+                                   <div class="col-md-6 col-lg-4">
+                                       <div class="cause-card h-100">
+                                           <h5 class="cause-title">Dry &amp; Dehydrated Skin</h5>
+                                           <p class="cause-description">Lack of moisture weakens the skin barrier, making skin appear rough, tired, and lifeless.</p>
+                                       </div>
+                                   </div>
                                                                     
-                                    <li><strong>Environmental Damage</strong><br>
-                                    Pollution, dust, and harsh climate conditions can lead to oxidative stress and skin dullness.</li><br>
+                                   <div class="col-md-6 col-lg-4">
+                                       <div class="cause-card h-100">
+                                           <h5 class="cause-title">Environmental Damage</h5>
+                                           <p class="cause-description">Pollution, dust, and harsh climate conditions can lead to oxidative stress and skin dullness.</p>
+                                       </div>
+                                   </div>
                                                                     
-                                    <li><strong>Cold Burns & Environmental Sensitivity</strong><br>
-                                    Sudden temperature changes and environmental exposure can damage the skin surface, affecting tone and texture.</li><br>
+                                   <div class="col-md-6 col-lg-4">
+                                       <div class="cause-card h-100">
+                                           <h5 class="cause-title">Cold Burns &amp; Environmental Sensitivity</h5>
+                                           <p class="cause-description">Sudden temperature changes and environmental exposure can damage the skin surface, affecting tone and texture.</p>
+                                       </div>
+                                   </div>
                                                                     
-                                    <li><strong>Lifestyle & Skincare Gaps</strong><br>
-                                    Poor nutrition, stress, inadequate skincare, and aging slow down cell renewal, resulting in uneven skin tone.</li>
-                                </ul>
-
-                            </div>
-                            
+                                   <div class="col-md-6 col-lg-4">
+                                       <div class="cause-card h-100">
+                                           <h5 class="cause-title">Lifestyle &amp; Skincare Gaps</h5>
+                                           <p class="cause-description">Poor nutrition, stress, inadequate skincare, and aging slow down cell renewal, resulting in uneven skin tone.</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
                             <section class="treatment-benefits-section py-5">
                                 <div class="container text-center">
                                     <h2 class="section-title mb-4">
@@ -287,6 +306,31 @@
                             </section>
                             
                             <style>
+                                .causes-section {
+                                    padding: 20px 0;
+                                }
+                                
+                                .section-heading {
+                                    font-size: 1.8rem;
+                                    font-weight: 700;
+                                    color: #0c2e5c;
+                                    position: relative;
+                                    margin-bottom: 2.5rem;
+                                    text-align: center;
+                                }
+                                
+                                .section-heading::after {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: -10px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 80px;
+                                    height: 4px;
+                                    background: linear-gradient(90deg, #00a8a8, #54d3dd);
+                                    border-radius: 2px;
+                                }
+                                
                                 .treatment-benefits-section {
                                     background-color: #f8f9fa;
                                     padding: 40px 0;
@@ -314,6 +358,67 @@
                                 .benefit-box:hover {
                                     transform: translateY(-5px);
                                     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                                }
+                                
+                                .cause-card {
+                                    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+                                    border-radius: 16px;
+                                    padding: 30px;
+                                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.08);
+                                    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    border: 1px solid #eef2f7;
+                                    position: relative;
+                                    overflow: hidden;
+                                }
+                                
+                                .cause-card::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    height: 4px;
+                                    background: linear-gradient(90deg, #00a8a8, #54d3dd);
+                                    opacity: 0;
+                                    transition: opacity 0.3s ease;
+                                }
+                                
+                                .cause-title {
+                                    color: #0c2e5c;
+                                    margin-bottom: 15px;
+                                    font-size: 1.2rem;
+                                    font-weight: 600;
+                                    line-height: 1.4;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                                .cause-title::before {
+                                    content: "• ";
+                                    color: #00a8a8;
+                                    font-size: 1.5rem;
+                                    margin-right: 10px;
+                                }
+                                
+                                .cause-description {
+                                    margin: 0;
+                                    font-size: 1rem;
+                                    color: #4b5563;
+                                    line-height: 1.7;
+                                    flex-grow: 1;
+                                }
+                                
+                                .cause-card:hover {
+                                    transform: translateY(-8px);
+                                    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+                                }
+                                
+                                .cause-card:hover::before {
+                                    opacity: 1;
                                 }
                             </style>
                             
@@ -870,15 +975,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <!-- Success/Error Messages -->
-                                                        <div class="clearfix error-handling-messages mt-2">
-                                                            <div id="success" class="alert alert-success d-none" role="alert">
-                                                                <i class="fi fi-rr-check-circle"></i> Thank you! Your appointment has been booked successfully. We will contact you shortly.
-                                                            </div>
-                                                            <div id="error" class="alert alert-danger d-none" role="alert">
-                                                                <i class="fi fi-rr-cross-circle"></i> Error occurred while sending email. Please try again later or call us at +91 95858 50306.
-                                                            </div>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </form>
 
@@ -1155,7 +1252,7 @@
                                 if (data.message) {
                                     errorDiv.innerHTML = data.message;
                                 } else {
-                                    errorDiv.innerHTML = 'Error occurred while processing your request. Please try again later.';
+                                    errorDiv.innerHTML = '';
                                 }
                                 errorDiv.style.display = 'block';
                                 errorDiv.scrollIntoView({behavior: 'smooth'});
@@ -1163,7 +1260,7 @@
                                 // Hide error message after 5 seconds
                                 setTimeout(() => {
                                     errorDiv.style.display = 'none';
-                                    errorDiv.innerHTML = 'Error occurred while\n                                                                sending\n                                                                email.\n                                                                Please try again later.'; // Reset to original message
+                                    errorDiv.innerHTML = ''; // Reset to original message
                                 }, 5000);
                             }
                         }

@@ -667,83 +667,7 @@
         <!-- end wpo-team-section -->
 
 
-        <!-- start wpo-appoinment-sectionn -->
-        <section class="wpo-appoinment-section-s2 section-padding">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="wpo-section-title">
-                            <span>Easily book an appointment in 3 simple steps</span>
-                            <h2>Book Your Transformation Today</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 col-12">
-                        <div class="appoinment-wrap">
-                            <div class="appoinment-right">
-                                <form method="post" class="contact-validation-active" id="consultancy-form" action="https://api.web3forms.com/submit">
-                                                                    <input type="hidden" name="access_key" value="833a3b81-0e65-45bc-83fb-e96d29ce9226">
-                                    <div class="row">
-                                        <!-- Name Field -->
-                                        <div class="form-field col-lg-6">
-                                            <input class="form-control" type="text" placeholder="Enter Your Name"
-                                                name="name" id="name" required style="border: 1px solid black;">
-                                        </div>
 
-                                        <!-- Mobile Number Field -->
-                                        <div class="form-field col-lg-6">
-                                            <input class="form-control" type="text" placeholder="Mobile number"
-                                                name="phone" id="phone" required style="border: 1px solid black;">
-                                        </div>
-
-                                        <!-- Date Field -->
-                                        <div class="form-field col-lg-6 mt-3">
-                                            <input class="form-control" type="date" placeholder="Date of appointment"
-                                                name="date" id="date" required style="border: 1px solid black;">
-                                        </div>
-
-                                        <!-- Treatment Selection Dropdown (Optional) -->
-                                        <div class="form-field col-lg-6 mt-3">
-                                            <select name="treatment" class="form-control"
-                                                style="border: 1px solid black;">
-                                                <option value="" selected disabled>Select Treatment (Optional)</option>
-                                                <option value="Skin Lightening">Skin Lightening</option>
-                                                <option value="Hair Growth PRP">Hair Growth PRP</option>
-                                                <option value="Laser Hair Removal">Laser Hair Removal</option>
-                                                <option value="Acne Removal">Acne Removal</option>
-                                                <option value="Anti-Aging">Anti-Aging</option>
-                                                <option value="Not Sure / Consultation">Not Sure / Consultation</option>
-                                            </select>
-                                        </div>
-
-                                        <!-- Submit Button -->
-                                        <div class="col-lg-12 mt-4">
-                                            <div class="submit-area">
-                                                <button type="submit" class="theme-btn"
-                                                    style="border: 1px solid black;">Confirm Booking</button>
-                                                <div id="loader">
-                                                    <i class="ti-reload"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Success/Error Messages -->
-                                        <div class="clearfix error-handling-messages mt-2">
-                                            <div id="success" style="color: green;">Thank you</div>
-                                            <div id="error" style="color: red;">Error occurred while sending email.
-                                                Please try again later.</div>
-                                        </div>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end wpo-appoinment-sectionn -->
 
 
         <!-- end wpo-testimonial-section -->
@@ -943,7 +867,7 @@
                                 if (data.message) {
                                     errorDiv.innerHTML = data.message;
                                 } else {
-                                    errorDiv.innerHTML = 'Error occurred while processing your request. Please try again later.';
+                                    errorDiv.innerHTML = '';
                                 }
                                 errorDiv.style.display = 'block';
                                 errorDiv.scrollIntoView({behavior: 'smooth'});
@@ -951,7 +875,7 @@
                                 // Hide error message after 5 seconds
                                 setTimeout(() => {
                                     errorDiv.style.display = 'none';
-                                    errorDiv.innerHTML = 'Error occurred while\n                                                                sending\n                                                                email.\n                                                                Please try again later.'; // Reset to original message
+                                    errorDiv.innerHTML = ''; // Reset to original message
                                 }, 5000);
                             }
                         }
